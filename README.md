@@ -46,24 +46,34 @@ Before building anything, I mapped the existing process. Intake was already auto
 I scoped the system around four key questions, plus a redesign of the form itself.
 
 **1. Notification routing: who hears about a new request, and how?**
-Decision: The sheet itself becomes the main queue. Requests are color-coded by priority, with urgent requests in red. Stalled requests get a 🔔 bell on their row and one reminder email to the shared IT mailbox.
-Why: An email alone was easy to lose track of. Making the queue show what needs attention means no one has to remember which emails came in or dig through a jumbled list.
+
+**Decision:** The sheet itself becomes the main queue. Requests are color-coded by priority, with urgent requests in red. Stalled requests get a 🔔 bell on their row and one reminder email to the shared IT mailbox.
+
+**Why:** An email alone was easy to lose track of. Making the queue show what needs attention means no one has to remember which emails came in or dig through a jumbled list.
 
 **2. Priority assignment: how is urgency decided?**
-Decision: The remote support agent sets the priority (Urgent, High, Medium, or Low) when they take the call. The IT team can change it after reviewing the request.
-Why: Urgency depends on the situation, not the type of request. A camera that isn't sending alerts can be urgent when monitoring keeps someone safe, while a password change may or may not be. Rigid categories wouldn't fit, so the agent's judgment comes first and IT can adjust it.
+
+**Decision:** The remote support agent sets the priority (Urgent, High, Medium, or Low) when they take the call. The IT team can change it after reviewing the request.
+
+**Why:** Urgency depends on the situation, not the type of request. A camera that isn't sending alerts can be urgent when monitoring keeps someone safe, while a password change may or may not be. Rigid categories wouldn't fit, so the agent's judgment comes first and IT can adjust it.
 
 **3. Resolved-request handling: what happens when a request is closed?**
-Decision: Setting a request's status to Resolved moves it automatically from the active queue to a Resolved tab, recording when it was resolved, who resolved it, and how many days it took.
-Why: The active queue stays focused on open work, while closed requests stay documented for compliance reviews or leadership questions about response times.
+
+**Decision:** Setting a request's status to Resolved moves it automatically from the active queue to a Resolved tab, recording when it was resolved, who resolved it, and how many days it took.
+
+**Why:** The active queue stays focused on open work, while closed requests stay documented for compliance reviews or leadership questions about response times.
 
 **4. Follow-up flags: when does a request get flagged as stale?**
-Decision: A request that hasn't changed status for 24 hours (Urgent) or 7 days (everything else) gets flagged with a bell and triggers a reminder. Any status change clears the flag. Requests on hold are never flagged, since they're waiting on something outside IT. A new request is marked as a duplicate when another unresolved request already exists for the same individual and the same issue type.
-Why: Stalled requests were one of our biggest pain points. Duplicate flags also show when someone has had to ask more than once, which is a signal the issue needs attention.
+
+**Decision:** A request that hasn't changed status for 24 hours (Urgent) or 7 days (everything else) gets flagged with a bell and triggers a reminder. Any status change clears the flag. Requests on hold are never flagged, since they're waiting on something outside IT. A new request is marked as a duplicate when another unresolved request already exists for the same individual and the same issue type.
+
+**Why:** Stalled requests were one of our biggest pain points. Duplicate flags also show when someone has had to ask more than once, which is a signal the issue needs attention.
 
 **5. Form redesign: what should agents enter?**
-Decision: I replaced the single free-text description with three fields: the individual's full name, an issue type dropdown listing the devices and systems we support, and a Notes box for details. IT has a separate Additional Notes column for updates while working a request.
-Why: Structured fields make sorting and duplicate checking reliable, and a dropdown is faster for agents than writing a description from scratch. Separating the agent's notes from IT's notes keeps the original request intact.
+
+**Decision:** I replaced the single free-text description with three fields: the individual's full name, an issue type dropdown listing the devices and systems we support, and a Notes box for details. IT has a separate Additional Notes column for updates while working a request.
+
+**Why:** Structured fields make sorting and duplicate checking reliable, and a dropdown is faster for agents than writing a description from scratch. Separating the agent's notes from IT's notes keeps the original request intact.
 
 ## Workflow
 
